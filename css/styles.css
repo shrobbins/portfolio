@@ -1,0 +1,132 @@
+/* General Styles */
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+body {
+   margin-top: 2rem;
+   margin-bottom: 1rem; 
+    font:  400 1rem 'Raleway', sans-serif;
+    color: #686868;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    padding-left: 1.3em;
+  }
+  li:before {
+    content: "\f1db"; 
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #9a47bc;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+  }
+
+  h2 {
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+  }
+
+
+/* Name and position at the top */
+.name {
+    text-transform: uppercase;
+    font-size: 2.7rem;
+    font-weight: 300;
+    text-align: right;
+}
+
+.position {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+
+/* skills section */
+
+.skills li {
+    margin-bottom: 1rem;
+}
+
+
+/* Hero and Portfolio */
+
+.hero,  .circle-links {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin-bottom: 2rem;
+    
+}
+
+.rounded-circle {
+    margin-bottom: 1.5rem;
+   }
+
+.hero:hover, .circle-links:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/* Center align the text within the three columns below the carousel */
+.portfolio .col-md-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+
+  .portfolio col-md-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+  .portfolio {
+      margin-top: 2rem;
+  }
+
+
+  .circle-links {
+      border: #9a47bc 6px solid;
+  }
+  
+  .bold {
+      font-weight: 600;
+  }
+
+.italic {
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* media queries
+Small devices (landscape phones, 544px and up) */
+
+@media screen and (max-width: 544px) {  
+    body {
+        margin-left: 0.9rem;
+        margin-right: 0.9rem;
+    }
+    .name{
+        font-size: 1.9rem;
+    }
+    .position {
+        font-size: 1.4rem;
+    }  
+     
+}
+
+@media screen and (max-width: 765px) {  
+    .skills li {
+        padding-right: 1rem;
+        float: left;
+    }
+
+}
